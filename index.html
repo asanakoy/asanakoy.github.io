@@ -1,38 +1,273 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-24712354-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+  gtag('config', 'UA-24712354-1');
+</script>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Artsiom Sanakoyeu</title>
+    
+<style type="text/css">
+	body
+	{
+		width:1400px;
+		text-align: center;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
+		font-size:16px;
+		background-color: #FFF;
+	}
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
+	table
+	{
+		padding: 5px;
+	}
+
+	table.pub_table,td.pub_td1,td.pub_td2
+	{
+		border-collapse: collapse;
+		border-bottom: 0px solid #9B9B9B;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-left: 10px;
+		width: 1100px;
+	}
+	td.pub_td1
+	{
+		width:100px;
+	}
+	td.pub_td2
+	{
+	}
+	td.year_heading
+	{
+		color: #3B3B3B;
+		font-weight: 700;
+		font-size:20px;
+	}
+	tr {
+		background-color: #FFF;
+	}
+
+	div#container
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 1200px;
+		text-align: left;
+		position: relative;
+		background-color: #FFF;
+	}
+	div#DocInfo
+	{
+		color: #9B9B9B;
+		height: 128px;
+	}
+	h4,h3,h2,h1
+	{
+		color: #3B3B3B;
+	}
+	h2
+	{
+		font-size:130%;
+	}
+	p
+	{
+		color: #000;
+		margin-bottom: 20px;
+	}
+	p.caption
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 600px;
+		font:11px helvetica,sans-serif;
+	}
+	p.caption2
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 800px;
+		font:11px helvetica,sans-serif;
+	}
+	#header_img
+	{
+		position: absolute;
+		top: 0px; right: 0px;
+	}
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	.section_div {
+		background-color: #FFF;
+		padding: 10px 10px 10px 10px;
+		margin: 10px 10px 10px 10px;
+		//border: 1px solid #AAA;
+	}
+	body {
+		background-color: #FFF;
+	}
+	#personal_info {
+		background-color: #FFF;
+	}
+	img.teaser_img {
+		width: 256px;
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border: 0px solid black
+	}
+	img.photo_of_me {
+		border-radius: 20px;
+	}
+	div.teaser_img_div {
+		width: 286px;
+	}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+	<div id="container">
+
+	<div class="section_div">
+        <table id="personal_info">
+        <tbody><tr>
+        <td><img class="photo_of_me" src="./images/my_photo2.jpg" width="180px" style="border: 1px solid black; float:left; margin-right:15px"></td>
+        <td>
+        <div id="DocInfo">
+            <h1>Artsiom Sanakoyeu</h1>
+             <b>artsiom.sanakoyeu</b> (at) <b>iwr.uni-heidelberg</b> (dot) <b>de</b><br>
+            <a href="https://scholar.google.de/citations?user=3JmMPIEAAAAJ&hl=en&oi=sra">Google Scholar</a> / <a href="https://www.linkedin.com/in/sanakoev/">LinkedIn</a> / <a href="https://github.com/asanakoy">GitHub</a>
+        </div><br>
+        </td>
+        </tr>
+        </tbody></table>
+
+
+        <h2>About me</h2>
+        <p>
+            I am a PhD student at <a href="https://hci.iwr.uni-heidelberg.de/compvis">Computer Vision</a> group at Heidelberg University under the supervision of <a href="https://hci.iwr.uni-heidelberg.de/Staff/bommer">Björn Ommer</a>.
+        </p>
+	</div>
+	<hr>
+
+
+    <div class="section_div">
+        <h2>News</h2>
+        <p>
+            &#9659; Our paper <a href="http://arxiv.org/abs/1807.10201">A Style-Aware Content Loss for Real-time HD Style Transfer</a> was accepted as Oral at ECCV 2018.
+        </p>
+    </div>
+    <hr>
+
+
+
+<div class="section_div">
+
+	<h2>Papers</h2>
+
+    <table class="pub_table"><tbody>
+    
+    <tr><td class="year_heading">2018<hr></td></tr>
+	<tr>
+        <td class="pub_td1">
+            <div class="teaser_img_div">
+                <a href="https://compvis.github.io/adaptive-style-transfer/"><img class="teaser_img" src="./images/teaser_eccv18.jpg"></a>
+            </div>
+        </td>
+		<td class="pub_td2">
+            <b>A Style-Aware Content Loss for Real-time HD Style Transfer</b>
+            <br>
+            Artsiom Sanakoyeu*, Dmytro Kotovenko*, Sabine Lang, Björn Ommer
+            <br>
+            <i>European Conference on Computer Vision (ECCV)</i>, 2018 (oral).
+            <br>
+            [<a href="http://arxiv.org/abs/1807.10201">Paper</a>][<a href="https://compvis.github.io/adaptive-style-transfer/">Website</a>][<a href="https://github.com/CompVis/adaptive-style-transfer">Code</a>]
+        </td>
+    </tr>
+        
+    <tr>
+        <td class="pub_td1">
+            <div class="teaser_img_div">
+                <img class="teaser_img" src="./images/teaser_pr_2018.jpg">
+            </div>
+        </td>
+		<td class="pub_td2">
+            <b>Deep Unsupervised Learning of Visual Similarities</b>
+            <br>
+            Artsiom Sanakoyeu, Miguel Bautista, Björn Ommer
+            <br>
+            <i> Pattern Recognition. 78, 2018</i>.
+            <br>[<a href="https://hci.iwr.uni-heidelberg.de/sites/default/files/publications/files/234934243/deep_unsupervised_learning_of_visual_similarities_pr_2018.pdf">Paper</a>][<a href="https://hci.iwr.uni-heidelberg.de/node/6229">Website</a>]
+        </td>
+    </tr>
+
+
+    <tr><td class="year_heading"><br>2017<hr></td></tr>
+    <tr>
+        <td class="pub_td1">
+            <div class="teaser_img_div">
+                <img class="teaser_img" src="./images/teaser_cvpr2017.png">
+            </div>
+        </td>
+		<td class="pub_td2">
+            <b>Deep Unsupervised Similarity Learning using Partially Ordered Sets</b>
+            <br>
+            Miguel Bautista*, Artsiom Sanakoyeu*, Björn Ommer
+            <br>
+            <i>  Conference on Computer Vision and Pattern Recognition (CVPR), 2017</i>.
+            <br>[<a href="https://arxiv.org/abs/1704.02268">Paper</a>][<a href="https://github.com/asanakoy/deep_unsupervised_posets">Code</a>]
+            
+        </td>
+    </tr>
+
+
+    <tr><td class="year_heading"><br>2016<hr></td></tr>
+    <tr>
+        <td class="pub_td1">
+            <div class="teaser_img_div">
+                <img class="teaser_img" src="./images/teaser_cliquecnn_400.png">
+            </div>
+        </td>
+		<td class="pub_td2">
+            <b>CliqueCNN: Deep Unsupervised Exemplar Learning</b>
+            <br>
+            Miguel Bautista*, Artsiom Sanakoyeu*, Björn Ommer
+            <br>
+            <i>Conference on Advances in Neural Information Processing Systems (NIPS), 2016</i>.
+            <br>[<a href="https://arxiv.org/abs/1608.08792">Paper</a>][<a href="https://asanakoy.github.io/cliquecnn/">Website</a>][<a href="http://www.viewserv.de/EMVA-Forum/4347_bm5jMuD7KqY3UKD62Rv1/7077.html#7077">Video Presentation</a>][<a href="https://github.com/asanakoy/cliquecnn">Code</a>]
+            
+        </td>
+<!--        TODO: add supllementary-->
+    </tr>
+
+	
+
+	</tbody></table>
+
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
 
+</div></body></html>
