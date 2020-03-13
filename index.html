@@ -17,10 +17,9 @@
 <style type="text/css">
 	body
 	{
-		width:1400px;
+		width:100%;
 		text-align: center;
 		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-		font-weight: 300;
 		font-size:16px;
 		background-color: #FFF;
 	}
@@ -125,6 +124,10 @@
 	#personal_info {
 		background-color: #FFF;
 	}
+    div#news p {
+		font-size:14px;
+        margin-bottom: 0px;
+	}
 	img.teaser_img {
 		width: 256px;
 		display: block;
@@ -168,15 +171,16 @@
 
         <h2>About me</h2>
         <p>
-            I am a PhD student at <a href="https://hci.iwr.uni-heidelberg.de/compvis">Computer Vision</a> group at Heidelberg University under the supervision of <a href="https://hci.iwr.uni-heidelberg.de/Staff/bommer">Björn Ommer</a>.
+            I am the last year PhD student at <a href="https://hci.iwr.uni-heidelberg.de/compvis">Computer Vision</a> group at Heidelberg University under the supervision of <a href="https://hci.iwr.uni-heidelberg.de/Staff/bommer">Björn Ommer</a>.
         </p>
 	</div>
 	<hr>
 
 
-    <div class="section_div">
+    <div class="section_div" id="news">
         <h2>News</h2>
-	<p>&#9659; 09/2019. I was ranked as one of the best reviewers at NeurIPS 2019 (top 400).</p>
+        <p>&#9659; 02/2020. Our paper <a href="https://asanakoy.github.io/densepose-evolution">Transferring Dense Pose to Proximal Animal Classes</a> was accepted at CVPR 2020.</p>
+	    <p>&#9659; 09/2019. I was ranked as one of the best reviewers at NeurIPS 2019 (top 400).</p>
         <p>&#9659; 09/2019. Started internship at Facebook AI Research (with Andrea Vedaldi and Natalia Neverova).</p>
         <p>&#9659; 08/2019. Our paper <a href="https://arxiv.org/abs/1904.04445">Semi-Supervised Segmentation of Salt Bodies in Seismic Images using an Ensemble of Convolutional Neural Networks</a> was accepted at GCPR 2019 [Oral].</p>
         <p>&#9659; 08/2019. Our paper <a href="https://compvis.github.io/content-style-disentangled-ST">Content and Style Disentanglement for Artistic Style Transfer</a> was accepted at ICCV 2019.</p>
@@ -205,6 +209,22 @@
     <tr>
         <td class="pub_td1">
             <div class="teaser_img_div">
+                <a href="https://asanakoy.github.io/densepose-evolution"><img class="teaser_img" src="./images/teaser_cvpr20.jpg"></a>
+            </div>
+        </td>
+		<td class="pub_td2">
+            <b>Transferring Dense Pose to Proximal Animal Classes</b>
+            <br>
+            Artsiom Sanakoyeu, Vasil Khalidov, Maureen S. McCarthy, Andrea Vedaldi, Natalia Neverova
+            <br>
+            <b>CVPR 2020.</b>
+            <br>
+            [<a href="https://arxiv.org/pdf/2003.00080.pdf">Paper</a>] [<a href="https://asanakoy.github.io/densepose-evolution" target="_blank">Website</a>]
+        </td>
+    </tr>
+    <tr>
+        <td class="pub_td1">
+            <div class="teaser_img_div">
                 <a href="https://compvis.github.io/content-style-disentangled-ST"><img class="teaser_img" src="./images/teaser_iccv19_style_transfer.jpg"></a>
             </div>
         </td>
@@ -215,7 +235,7 @@
             <br>
             <b>ICCV 2019.</b>
             <br>
-            [<a href="#">Paper</a>] [<a href="https://compvis.github.io/content-style-disentangled-ST" target="_blank">Website</a>] [<a href="https://github.com/CompVis/content-style-disentangled-ST" target="_blank">Code</a>] [<a href="https://www.youtube.com/watch?v=XqBblEngeRY&list=PLPXplX5Y1SzGOxo22bqZjV1V-_LgcmLnT&index=3&t=0s" target="_blank">Video</a>]
+            [<a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Kotovenko_Content_and_Style_Disentanglement_for_Artistic_Style_Transfer_ICCV_2019_paper.pdf">Paper</a>] [<a href="https://compvis.github.io/content-style-disentangled-ST" target="_blank">Website</a>] [<a href="https://github.com/CompVis/content-style-disentangled-ST" target="_blank">Code</a>] [<a href="https://www.youtube.com/watch?v=XqBblEngeRY&list=PLPXplX5Y1SzGOxo22bqZjV1V-_LgcmLnT&index=3&t=0s" target="_blank">Video</a>]
         </td>
     </tr>
         
@@ -401,7 +421,7 @@
 </div>
         
 <h2> Review activities</h2>
-<p> NeurIPS (<b> Best Reviewer 2019 </b>), ICCV, IEEE Transactions on Image Processing</p>
+<p> NeurIPS (<b> Best Reviewer 2019 </b>), ICCV, CVPR, ECCV, SIGGRAPH, IEEE Transactions on Image Processing </p>
 
 
 </div></body></html>
